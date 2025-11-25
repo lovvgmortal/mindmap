@@ -4,7 +4,7 @@ import { DEFAULT_NODE_STYLE } from '../constants';
 import { generateId } from '../utils/cn';
 
 const getClient = () => {
-  const apiKey = process.env.API_KEY;
+  const apiKey = "AIzaSyCBF8uPU0XANLUcLx1z9wpnnvROP5D3jG8";
   if (!apiKey) {
     console.warn("Gemini API Key is missing. AI features will return mock data.");
     return null;
@@ -31,7 +31,7 @@ export const expandTopicWithGemini = async (topic: string): Promise<MindMapNodeD
     const prompt = `Generate 4 concise sub-topics or related ideas for the mind map node: "${topic}". Return only the list of strings.`;
     
     const response = await client.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-2.5-pro',
       contents: prompt,
       config: {
         responseMimeType: "application/json",
