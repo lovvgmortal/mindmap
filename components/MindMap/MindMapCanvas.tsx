@@ -265,7 +265,8 @@ export const MindMapCanvas: React.FC<MindMapCanvasProps> = ({ initialData, onSav
         backgroundColor: '#f8fafc',
         quality: 1.0,
         pixelRatio: 2,
-        cacheBust: true
+        cacheBust: true,
+        skipFonts: true
       });
 
       // Restore styles
@@ -366,7 +367,7 @@ export const MindMapCanvas: React.FC<MindMapCanvasProps> = ({ initialData, onSav
               onToggleExpand={handleToggleExpand}
             />
           ))}
-          <img ref={watermarkRef} src="/logo.png" crossOrigin="anonymous" data-watermark="true" alt="Mindflow" className="absolute bottom-4 left-4 w-20 h-20 opacity-0 pointer-events-none select-none" />
+          
         </div>
         
         {/* Floating Action Dock (Bottom Center) */}

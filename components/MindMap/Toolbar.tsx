@@ -32,7 +32,6 @@ export const Toolbar: React.FC<ToolbarProps> = ({
       {/* Header */}
       <div className="p-4 border-b border-slate-100 flex items-center justify-between bg-slate-50/50">
         <div className="flex items-center gap-2">
-           <img src="/logo.png" alt="Mindflow" className="w-6 h-6 rounded" />
            <button onClick={onBack} className="p-2 hover:bg-slate-200 rounded-full transition">
              <ArrowLeft size={18} className="text-slate-600" />
            </button>

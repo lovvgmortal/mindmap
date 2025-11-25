@@ -58,7 +58,7 @@ const App: React.FC = () => {
       ) : (
         <Dashboard onOpenProject={setCurrentProject} />
       )}
-      <img src="/logo.png" alt="Mindflow" className="fixed bottom-4 left-4 w-20 h-20 opacity-10 pointer-events-none select-none" />
+      
     </div>
   );
 };

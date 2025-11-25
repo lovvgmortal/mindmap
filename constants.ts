@@ -61,35 +61,5 @@ export const INITIAL_DATA: MindMapNodeData = {
   text: 'Central Idea',
   isExpanded: true,
   style: { ...DEFAULT_NODE_STYLE, fontSize: 24, color: '#8b5cf6', shape: 'pill', textColor: '#ffffff', fontFamily: 'Consolas' },
-  children: [
-    {
-      id: '1',
-      text: 'Marketing',
-      isExpanded: true,
-      style: { ...DEFAULT_NODE_STYLE, color: '#ec4899', fontSize: 16, shape: 'leaf', textColor: '#ffffff' },
-      children: [
-        {
-          id: '1-1',
-          text: 'Social Media',
-          isExpanded: true,
-          style: { ...DEFAULT_NODE_STYLE, shape: 'parallelogram', color: '#f472b6' },
-          children: []
-        },
-        {
-          id: '1-2',
-          text: 'Advertising',
-          isExpanded: true,
-          style: { ...DEFAULT_NODE_STYLE, shape: 'hexagon', color: '#db2777' },
-          children: []
-        }
-      ]
-    },
-    {
-      id: '2',
-      text: 'Product',
-      isExpanded: true,
-      style: { ...DEFAULT_NODE_STYLE, color: '#10b981', fontSize: 16, shape: 'rect', textColor: '#ffffff' },
-      children: []
-    }
-  ]
+  children: []
 };
